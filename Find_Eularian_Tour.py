@@ -1,4 +1,4 @@
-def find_eularian_tour(graph):
+def find_eulerian_tour(graph):
  #This function takes in a graph and determines if there exists an Eulerian tour. If yes, it will gives the tour in #term of an array of vertices in term of traveling order. If not, it will display a message and terminates the #program. The input format should be an array of numerical 2-tuples, indicating the edges in the graph.
  ######################
     
@@ -228,6 +228,7 @@ def find_eularian_tour(graph):
     else:
         #Now we know there exists a tour. Use the function to generate the path.
         print("We have a Eulerian Graph. The Eulerian Tour is:")
-        generate_Eulerian_tour(graph) 
+        final_tour=generate_Eulerian_tour(graph)
+        return final_tour
 
-find_eularian_tour([(1,1),(1,1),(1,2),(1,2),(3,1),(3,1),(2,4),(4,5)])
+find_eulerian_tour([(1,1),(1,1),(1,2),(1,2),(3,1),(3,1),(2,4),(4,5)])
